@@ -8,6 +8,23 @@
 
   // OCULTA IMAGEN UTE CUANDO ABRE MENÚ EN MOBILES
 
+  // JavaScript code
+
+// Get the image element
+const imageElement = document.querySelector(".mobile-only img");
+
+// Listen for the resize event
+window.addEventListener("resize", function() {
+  // Check if the window width is less than or equal to 767 pixels
+  if (window.innerWidth <= 767) {
+    // Hide the image
+    imageElement.style.display = "none";
+  } else {
+    // Show the image
+    imageElement.style.display = "block";
+  }
+});
+
 
 // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
 
