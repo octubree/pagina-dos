@@ -1952,6 +1952,20 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileImage = document.querySelector('.mobile-only');
+      
+      document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
+        if (mobileImage.style.display === 'none' || mobileImage.style.display === '') {
+          mobileImage.style.display = 'block';
+        } else {
+          mobileImage.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
