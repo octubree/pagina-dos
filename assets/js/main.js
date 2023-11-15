@@ -23,17 +23,17 @@
 
   // OCULTA LA IMAGEN UTE CUANDO SE ABRE MENÚ EN PC 
 
-// Function to hide the image on desktop devices
+// Get the navigation menu element and the image element
 function hideImageOnDesktop() {
-  // Get the image element
+  const navigationMenuElement = document.querySelector(".navbar");
   const imageElement = document.querySelector(".desktop-only img");
 
-  // Hide the image
-  imageElement.style.display = "none";
+  // Add the click event to the navigation menu
+  navigationMenuElement.addEventListener("click", hideImageOnDesktop);
 }
 
-// Listen for the resize event
-window.addEventListener("resize", hideImageOnDesktop);
+// Hide the image on desktop devices
+hideImageOnDesktop();
 
 
 // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
