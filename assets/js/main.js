@@ -13,10 +13,9 @@ const imageElement = document.querySelector(".mobile-only img");
 // Get the navigation menu element
 const navigationMenuElement = document.querySelector(".navbar");
 
-// Listen for the click event on the image
-imageElement.addEventListener("click", function() {
-  // Toggle the visibility of the navigation menu
-  navigationMenuElement.classList.toggle("open");
+// Listen for the click event on the navigation menu
+navigationMenuElement.addEventListener("click", function() {
+  // Do nothing
 });
 
 // Hide the image on desktop devices
