@@ -23,20 +23,17 @@
 
   // OCULTA LA IMAGEN UTE CUANDO SE ABRE MENÚ EN PC 
 
-// Get the image element
-const imageElement = document.querySelector(".desktop-only img");
+// Function to hide the image on desktop devices
+function hideImageOnDesktop() {
+  // Get the image element
+  const imageElement = document.querySelector(".desktop-only img");
+
+  // Hide the image
+  imageElement.style.display = "none";
+}
 
 // Listen for the resize event
-window.addEventListener("resize", function() {
-  // Check if the window width is greater than or equal to 768 pixels
-  if (window.innerWidth >= 768) {
-    // Hide the image
-    imageElement.style.display = "none";
-  } else {
-    // Show the image
-    imageElement.style.display = "block";
-  }
-});
+window.addEventListener("resize", hideImageOnDesktop);
 
 
 // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
