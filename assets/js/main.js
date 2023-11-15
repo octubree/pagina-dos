@@ -28,18 +28,17 @@ function hideImageOnDesktop() {
   const navigationMenuElement = document.querySelector(".navbar");
   const imageElement = document.querySelector(".desktop-only img");
 
-  // Add the click event to the navigation menu
-  navigationMenuElement.addEventListener("click", hideImageOnDesktop);
-
-  // Hide the image on desktop devices
+  // Check the window width only once
   if (window.innerWidth >= 768) {
     imageElement.style.display = "none";
+
+    // Add the click event to the navigation menu
+    navigationMenuElement.addEventListener("click", hideImageOnDesktop);
   }
 }
 
 // Hide the image on desktop devices
 hideImageOnDesktop();
-
 
 // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
 
