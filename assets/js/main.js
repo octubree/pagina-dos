@@ -8,7 +8,7 @@
 
   // OCULTA IMAGEN UTE CUANDO ABRE MENÚ EN MOBILES
 
-  const imageElement = document.querySelector('.mobile-only img');
+  const imageElement = document.querySelector('.mobile-only > img');
   const navigationMenuElement = document.querySelector('#navbar');
   
   navigationMenuElement.addEventListener('click', () => {
