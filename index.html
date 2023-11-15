@@ -104,6 +104,26 @@
         display: block !important;
       }
     }
+
+    @media (max-width: 767px) {
+    .mobile-only {
+      display: none !important;
+    }
+
+    .desktop-only {
+      display: block !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .mobile-only {
+      display: block !important;
+    }
+
+    .desktop-only {
+      display: none !important;
+    }
+  }
   </style>
 
 
@@ -158,7 +178,9 @@
             </div>
 
             </div>
-            
+               
+
+            <!-- SOLO EN TELÉFONOS Y TABLET -->
             <div class="mobile-only" style="position: relative;">
               <div style="position: absolute; top: auto; right: 120px; max-width: 200px; max-height: 400px; background: transparent; padding: 1px; box-sizing: border-box;">
                 <!-- Contenido del bloque -->
@@ -169,7 +191,19 @@
             <div class="desktop-only">
               <!-- Contenido que solo se mostrará en dispositivos de escritorio -->
             </div>
-            
+
+            <!-- SOLO EN PC  -->
+              
+<div class="mobile-only">
+  <!-- Contenido que solo se mostrará en dispositivos móviles y tabletas -->
+</div>
+
+<div class="desktop-only" style="position: relative;">
+  <div style="position: absolute; top: auto; right: 120px; max-width: 200px; max-height: 400px; background: transparent; padding: 1px; box-sizing: border-box;">
+    <!-- Contenido del bloque -->
+    <img src="https://ik.imagekit.io/tnzquipyu/ute-removebg-preview.png?updatedAt=1700002422702" alt="Descripción de la imagen" style="max-width: 100%; height: auto;">
+  </div>
+</div>            
 
        
 
