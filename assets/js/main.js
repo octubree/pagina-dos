@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-  // JavaScript code
+  // OCULTA IMAGEN UTE CUANDO ABRE MENÚ EN MOBILES
 
   // Get the image element
   const imageElement = document.querySelector(".mobile-only img");
@@ -19,6 +19,27 @@
     // Hide the image
     imageElement.style.display = "none";
   });
+
+
+  // OCULTA LA IMAGEN UTE CUANDO SE ABRE MENÚ EN PC 
+
+// Get the image element
+const imageElement = document.querySelector(".desktop-only img");
+
+// Listen for the resize event
+window.addEventListener("resize", function() {
+  // Check if the window width is greater than or equal to 768 pixels
+  if (window.innerWidth >= 768) {
+    // Hide the image
+    imageElement.style.display = "none";
+  } else {
+    // Show the image
+    imageElement.style.display = "block";
+  }
+});
+
+
+// EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
 
 (function() {
   "use strict";
