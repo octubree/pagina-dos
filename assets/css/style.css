@@ -25,7 +25,7 @@
 
 
 /* For mobile devices only */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .mobile-only {
     position: fixed;
     top: 140px;
@@ -44,11 +44,14 @@
   .mobile-only {
     display: none !important;
   }
+} */
+
+
+
+#contacto img {
+  max-width: 150px;
+  height: auto;
 }
-
-
-
-
 
 
 
