@@ -117,6 +117,10 @@
 
   </style>
 
+  <!-- Agrega la referencia a jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
 
 </head>
 
@@ -1935,15 +1939,9 @@
   </div-->
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var mobileImage = document.querySelector('.mobile-only');
-      
-      document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
-        if (mobileImage.style.display === 'none' || mobileImage.style.display === '') {
-          mobileImage.style.display = 'block';
-        } else {
-          mobileImage.style.display = 'none';
-        }
+    $(document).ready(function () {
+      $('.mobile-nav-toggle').click(function () {
+        $('.mobile-only').toggle();
       });
     });
   </script>
