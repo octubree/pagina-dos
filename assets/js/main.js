@@ -6,8 +6,25 @@
 * License: https://bootstrapmade.com/license/
 */
 
+  // OCULTA IMAGEN UTE CUANDO ABRE MENÚ EN MOBILES
+
+  // Get the image element
+  const imageElement = document.querySelector(".mobile-only img");
+  
+  // Get the navigation menu element
+  const navigationMenuElement = document.querySelector(".navbar");
+  
+  // Listen for the click event on the navigation menu
+  navigationMenuElement.addEventListener("click", function() {
+    // Hide the image
+    imageElement.style.display = "none";
+  });
 
 
+
+
+// Hide the image on desktop devices
+hideImageOnDesktop();
 
 // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
 
