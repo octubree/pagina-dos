@@ -24,6 +24,32 @@
 
 
 
+ /* For mobile devices only */
+@media (max-width: 767px) {
+  .mobile-only {
+    position: fixed;
+    top: 140px;
+    left: 50px;
+    max-width: 150px;
+    max-height: 250px;
+    background: transparent;
+    padding: 1px;
+    box-sizing: border-box;
+    z-index: 9999; /* Set z-index to a higher value than the navigation menu */
+  }
+}
+
+/* For desktop devices only */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+
+
+
+
 
 
   /* MUESTRA SOLO EN PANTALLAS GRANDES  */
