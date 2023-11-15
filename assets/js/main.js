@@ -5,6 +5,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+  // JavaScript code
+
+  // Get the image element
+  const imageElement = document.querySelector(".mobile-only img");
+  
+  // Get the navigation menu element
+  const navigationMenuElement = document.querySelector(".navbar");
+  
+  // Listen for the click event on the navigation menu
+  navigationMenuElement.addEventListener("click", function() {
+    // Hide the image
+    imageElement.style.display = "none";
+  });
+
 (function() {
   "use strict";
 
