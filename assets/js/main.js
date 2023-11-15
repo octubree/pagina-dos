@@ -30,6 +30,11 @@ function hideImageOnDesktop() {
 
   // Add the click event to the navigation menu
   navigationMenuElement.addEventListener("click", hideImageOnDesktop);
+
+  // Hide the image on desktop devices
+  if (window.innerWidth >= 768) {
+    imageElement.style.display = "none";
+  }
 }
 
 // Hide the image on desktop devices
