@@ -20,7 +20,12 @@
 }
 /* TERMINA BOTON WHATSAPP  */
 
-
+/* CENTRO SOLO LOS H2 DESDE OBRA NUEVA HASTA TRÁMITES ANTE UTE  */
+@media (max-width: 768px) {
+  .h2:nth-child(3) {
+    text-align: center;
+  }
+}
 
 
 
