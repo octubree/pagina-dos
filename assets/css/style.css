@@ -81,8 +81,39 @@
 }
 /* TERMINA TEXTO NUMERO  */
 
+/* EFECTO BOTON SCROLL SERVICIOS  */
+
+.scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn.show {
+  display: block;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.scroll-btn:hover {
+  background-color: #2980b9;
+}
+
+.scroll-btn.animate__animated {
+  animation-duration: 1s; /* Duración de la animación */
+}
 
 
+
+/* TERMINA EFECTO BOTON SCROLL SERVICIO  */
 
 
 
