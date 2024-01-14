@@ -10,54 +10,14 @@
 # General
 --------------------------------------------------------------*/
 
-/* BOTON WHATSAPP ------ */
 
-/* Oculta el botón de WhatsApp y el enlace de llamada sólo en pantallas grandes */
+
+ /* Oculta el botón de WhatsApp y el enlace de llamada sólo en pantallas grandes */
 @media screen and (min-width: 768px) {
   #contacto {
     display: none;
   }
 }
-/* TERMINA BOTON WHATSAPP  */
-
-/* CENTRO SOLO LOS H2 DESDE OBRA NUEVA HASTA TRÁMITES ANTE UTE  */
-@media (max-width: 768px) {
-  .h2:nth-child(3) {
-    text-align: center;
-  }
-}
-
-
-
-/* For mobile devices only */
-/* @media (max-width: 767px) {
-  .mobile-only {
-    position: fixed;
-    top: 140px;
-    left: 50px;
-    max-width: 100px;
-    max-height: 50px;
-    background: transparent;
-    padding: 1px;
-    box-sizing: border-box;
-    z-index: 9999; /* Set z-index to a higher value than the navigation menu */
-  }
-}
-
-/* For desktop devices only */
-@media (min-width: 768px) {
-  .mobile-only {
-    display: none !important;
-  }
-} */
-
-
-
-#contacto img {
-  max-width: 150px;
-  height: auto;
-}
-
 
 
   /* MUESTRA SOLO EN PANTALLAS GRANDES  */
@@ -80,46 +40,6 @@
   left: 0;
 }
 /* TERMINA TEXTO NUMERO  */
-
-/* EFECTO BOTON SCROLL SERVICIOS  */
-
-.scroll-btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-}
-
-.scroll-btn.show {
-  display: block;
-}
-
-/* Estilos adicionales para mejorar la apariencia */
-.scroll-btn:hover {
-  background-color: #2980b9;
-}
-
-.scroll-btn.animate__animated {
-  animation-duration: 1s; /* Duración de la animación */
-}
-
-
-
-/* TERMINA EFECTO BOTON SCROLL SERVICIO  */
-
-
-
-
-
-
 
 
 
@@ -146,21 +66,19 @@ body::before {
   z-index: -1;
 }
 
-/* FLECHA BAJAR ---- */
-
-      /* FLECHA GIF----- */
-      #gif-container {
-        position: fixed;
-        bottom: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      #gif-container img {
-        width: 50px;
-        height: 50px;
-        transform: scaleY(-1);
-      }
+        /* FLECHA GIF----- */
+        #gif-container {
+          position: fixed;
+          bottom: 80px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        #gif-container img {
+          width: 50px;
+          height: 50px;
+          transform: scaleY(-1);
+        }
       /* Flecha GIF solo en pantallas de escritorio */
 @media screen and (min-width: 768px) {
   #gif-container {
@@ -183,6 +101,8 @@ body::before {
     display: none;
   }
 }
+  
+
 
 
 @media (min-width: 1024px) {
@@ -216,7 +136,7 @@ h6 {
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   z-index: 997;

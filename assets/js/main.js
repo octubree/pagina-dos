@@ -15,41 +15,7 @@
     mobileOnlyDiv.style.display = 'none';
   });
 
-
-// EFECTO SCROOL SERVICIOS 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var scrollButton = document.getElementById('scrollButton');
-  var servicesLink = document.getElementById('servicesLink');
-
-  servicesLink.addEventListener('click', function () {
-      scrollButton.classList.add('animate__animated', 'animate__fadeOutUp');
-      setTimeout(function () {
-          scrollButton.style.display = 'none';
-      }, 1000); // Espera a que termine la animación y luego oculta el botón
-  });
-
-  window.addEventListener('scroll', function () {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollButton.classList.add('show');
-      } else {
-          scrollButton.classList.remove('show');
-      }
-  });
-
-  scrollButton.addEventListener('click', function () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  });
-});
-
-
-
-
-  // TERMINA EFECTO SCROOL SERVICIOS 
-
-
-  // EMPIEZA JAVASCRIPT DE QUE VINO CON LA PLANTILLA POR DEFECTO 
+// TERMINA OCULTA IMAGEN CUANDO ABRE MENU MOBILES
 
 (function() {
   "use strict";
